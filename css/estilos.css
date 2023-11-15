@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray
+}
+
+.teclado {
+
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 50vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    
+}
+
+.teclado > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border-color: darkgrey;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.output {
+
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10 px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+
+}
